@@ -1,0 +1,12 @@
+version: "3"
+
+services: 
+  python4ds:
+    image: matcom/python4ds:latest
+    build: "."
+    container_name: python4ds
+    ports:
+      - 8501:8501
+    volumes: 
+      - ./:/src
+    command: ["streamlit", "run", "python4ds/app.py"]

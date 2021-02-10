@@ -1,0 +1,2 @@
+streamlit==0.76
+streamlit-ace==0.0.4
